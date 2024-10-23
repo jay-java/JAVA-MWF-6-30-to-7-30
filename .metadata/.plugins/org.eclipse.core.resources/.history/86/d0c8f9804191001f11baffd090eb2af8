@@ -1,0 +1,7 @@
+package core;
+
+public class P003_TypeCasting {
+	public static void main(String[] args) {
+		
+	}
+}

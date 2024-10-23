@@ -1,0 +1,45 @@
+package core;
+
+import java.util.Scanner;
+
+public class P005_Conditions {
+	public static void main(String[] args) {
+		//1.simple if
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("simple if");
+		System.out.println("enter a=  ");
+		int a= sc.nextInt();
+		System.out.println("enter b = ");
+		int b = sc.nextInt();
+		if(a>b) {
+			System.out.println("a is greater than b");
+		}
+		
+		//2. if else
+		System.out.println("if else");
+		System.out.println("enter a=  ");
+		int a1= sc.nextInt();
+		System.out.println("enter b = ");
+		int b1 = sc.nextInt();
+		if(a1>b1) {
+			System.out.println("a is greater than b");
+		}
+		else {
+			System.out.println("b is greater than a");
+		}
+		
+		//3.nested if
+		System.out.println("nested if");
+		System.out.println("enter age = ");
+		int age = sc.nextInt();
+		if(age>18) {
+			
+		}
+		else{
+			System.out.println("age is less than 18");
+		}
+		
+		
+	}
+}

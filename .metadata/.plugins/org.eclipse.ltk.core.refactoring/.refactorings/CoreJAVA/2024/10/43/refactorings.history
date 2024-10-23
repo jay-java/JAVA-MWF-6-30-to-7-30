@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;core.P004_Conditions&apos; to &apos;P005_Conditions&apos;&#x0D;&#x0A;- Original project: &apos;CoreJAVA&apos;&#x0D;&#x0A;- Original element: &apos;core.P004_Conditions&apos;&#x0D;&#x0A;- Renamed element: &apos;core.P005_Conditions&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;P004_Conditions&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;core{P004_Conditions.java[P004_Conditions" matchStrategy="1" name="P005_Conditions" qualified="false" references="true" similarDeclarations="false" stamp="1729690684645" textual="false" version="1.0"/>
+</session>

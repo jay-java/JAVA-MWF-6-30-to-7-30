@@ -1,0 +1,8 @@
+package core;
+
+
+public class P004_UserInput {
+	public static void main(String[] args) {
+		
+	}
+}

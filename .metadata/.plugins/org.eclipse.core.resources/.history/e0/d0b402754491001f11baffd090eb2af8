@@ -1,0 +1,14 @@
+package core;
+
+class FirstClass {
+	public void call() {
+		System.out.println("call function");
+	}
+}
+
+public class P004_UserInput {
+	public static void main(String[] args) {
+		System.out.println("main method");
+		FirstClass f = new FirstClass();
+	}
+}

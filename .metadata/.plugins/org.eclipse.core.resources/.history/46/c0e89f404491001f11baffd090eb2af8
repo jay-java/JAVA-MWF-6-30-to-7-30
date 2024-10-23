@@ -1,0 +1,12 @@
+package core;
+
+class FirstClass{
+	public void call() {
+		
+	}
+}
+public class P004_UserInput {
+	public static void main(String[] args) {
+		
+	}
+}
