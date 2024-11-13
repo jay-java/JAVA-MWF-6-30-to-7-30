@@ -1,0 +1,8 @@
+package core;
+
+public class P009_String {
+	public static void main(String[] args) {
+		char c[] = {'J','A','V','A'};
+		System.out.println(c);
+	}
+}
