@@ -1,0 +1,6 @@
+package core;
+public class P011_Inheritance {
+	public static void main(String[] args) {
+		
+	}
+}

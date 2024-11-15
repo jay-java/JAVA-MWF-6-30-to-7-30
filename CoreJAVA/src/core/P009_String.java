@@ -1,5 +1,5 @@
 package core;
-
+//immutable()
 public class P009_String {
 	public static void main(String[] args) {
 		char c[] = { 'J', 'A', 'V', 'A' };

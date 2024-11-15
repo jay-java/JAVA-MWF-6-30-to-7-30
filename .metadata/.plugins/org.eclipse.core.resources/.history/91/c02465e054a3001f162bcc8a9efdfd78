@@ -1,0 +1,23 @@
+package core;
+
+class Data{
+	int i;
+	String name;
+	double value;
+	public Data() {
+		System.out.println("default cons in data");
+	}
+	public void call() {
+		System.out.println("call in data class");
+	}
+}
+public class P010_Constructor {
+	public static void main(String[] args) {
+		Data d = new Data();
+		d.call();
+		d.i = 12;
+		d.name="java";
+		d.value=3.14;
+		System.out.println(d.i);
+	}
+}

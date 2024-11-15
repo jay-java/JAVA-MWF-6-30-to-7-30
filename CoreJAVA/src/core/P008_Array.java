@@ -1,7 +1,7 @@
 package core;
 
 import java.util.Scanner;
-
+//jagged
 public class P008_Array {
 	public static void main(String[] args) {
 		int i[] = { 1, 2, 3, 4, 5 };

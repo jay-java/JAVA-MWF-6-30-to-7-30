@@ -1,0 +1,14 @@
+package core;
+
+class Data{
+	
+	public void call() {
+		System.out.println("call in data class");
+	}
+}
+public class P010_Constructor {
+	public static void main(String[] args) {
+		Data d = new Data();
+		d.call();
+	}
+}
