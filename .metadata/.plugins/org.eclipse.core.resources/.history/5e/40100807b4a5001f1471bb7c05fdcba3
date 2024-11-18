@@ -1,0 +1,15 @@
+package core;
+
+class Vehicle{
+	public void accelarator();
+	public void brake();
+	public void fueltank();
+}
+class Bike extends Vehicle{
+	
+}
+public class P013_Abstraction {
+	public static void main(String[] args) {
+		System.out.println("");
+	}
+}

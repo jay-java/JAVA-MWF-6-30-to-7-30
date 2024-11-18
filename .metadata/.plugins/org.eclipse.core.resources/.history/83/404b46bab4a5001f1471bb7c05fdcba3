@@ -1,0 +1,15 @@
+package core;
+
+abstract class RBI{
+	abstract public void SA();
+	abstract public void HL();
+	abstract public void PL();
+}
+class SBI extends RBI{
+	
+}
+public class P013_Abstraction {
+	public static void main(String[] args) {
+		System.out.println("");
+	}
+}

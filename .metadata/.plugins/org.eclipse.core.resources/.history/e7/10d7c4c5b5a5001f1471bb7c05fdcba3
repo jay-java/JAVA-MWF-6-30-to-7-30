@@ -1,0 +1,9 @@
+package core;
+class Employee{
+	
+}
+public class P014_StaticKeyword {
+	public static void main(String[] args) {
+		
+	}
+}

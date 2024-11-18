@@ -1,0 +1,12 @@
+package core;
+
+class RBI{
+	abstract public void SA();
+	public void HL();
+	public void PL();
+}
+public class P013_Abstraction {
+	public static void main(String[] args) {
+		System.out.println("");
+	}
+}

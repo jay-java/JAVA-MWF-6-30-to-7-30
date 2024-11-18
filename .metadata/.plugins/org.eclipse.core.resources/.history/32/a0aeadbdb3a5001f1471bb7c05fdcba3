@@ -1,0 +1,10 @@
+package core;
+
+class Vehicle{
+	
+}
+public class P013_Abstraction {
+	public static void main(String[] args) {
+		System.out.println("");
+	}
+}

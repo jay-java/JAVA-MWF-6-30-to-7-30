@@ -1,0 +1,12 @@
+package core;
+class Employee{
+	int id;
+	String name;
+	static String company_name="TOPS";
+	
+}
+public class P014_StaticKeyword {
+	public static void main(String[] args) {
+		
+	}
+}
