@@ -1,0 +1,9 @@
+package core;
+interface inter1{
+	public void interface1();
+}
+public class P017_Interface {
+	public static void main(String[] args) {
+		
+	}
+}
