@@ -1,0 +1,12 @@
+package core;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class P019_File {
+	public static void main(String[] args) throws FileNotFoundException {
+		String msg= "this msg will stored into file";
+		
+		FileOutputStream fos = new FileOutputStream("t1.txt");
+	}
+}

@@ -1,9 +1,0 @@
-package core;
-class Call{
-	public void add(int a,int b) {
-		return a+b;
-	}
-}
-public class P012_polymorphism {
-
-}

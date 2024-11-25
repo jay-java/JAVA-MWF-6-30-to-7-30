@@ -10,5 +10,11 @@
     <fullyQualifiedTypeName name="core.Employee"/>
     <fullyQualifiedTypeName name="core.Student"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="core.ABC"/>
+    <fullyQualifiedTypeName name="core.ABCNew"/>
+    <fullyQualifiedTypeName name="core.interCall"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package core;
+
+public class P019_File {
+	public static void main(String[] args) {
+		String msg= "this msg will stored into file";
+		
+	}
+}
