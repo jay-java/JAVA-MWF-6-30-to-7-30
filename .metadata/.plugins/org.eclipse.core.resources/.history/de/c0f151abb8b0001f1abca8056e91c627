@@ -1,0 +1,27 @@
+package core;
+
+class User{
+	private int id;
+	private String name;
+	private long contact;
+	private String address;
+	
+	public User(int id, String name, long contact, String address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.contact = contact;
+		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", contact=" + contact + ", address=" + address + "]";
+	}
+	
+}
+public class P027_ListPractical {
+	public static void main(String[] args) {
+		
+	}
+}

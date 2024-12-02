@@ -17,7 +17,7 @@ public class P019_File {
 		
 		FileInputStream fis = new FileInputStream("t1.txt");
 		int i;
-		while((i =fis.read())!= -1) {
+		while((i = fis.read())!= -1) {
 			System.out.print((char)i);
 		}
 	}

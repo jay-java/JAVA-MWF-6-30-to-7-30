@@ -1,0 +1,8 @@
+package core;
+
+
+public class P027_ListPractical {
+	public static void main(String[] args) {
+		
+	}
+}
