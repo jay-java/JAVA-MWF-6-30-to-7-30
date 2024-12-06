@@ -1,0 +1,16 @@
+package core;
+
+import javax.swing.JFrame;
+
+class SwingDemo{
+	public SwingDemo() {
+		JFrame fr =new JFrame("MyApp");
+		fr.setVisible(true);
+		fr.setSize(700, 500);
+	}
+}
+public class P031_Swing {
+	public static void main(String[] args) {
+		new SwingDemo();
+	}
+}

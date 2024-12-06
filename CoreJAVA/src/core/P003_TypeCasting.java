@@ -14,6 +14,12 @@ public class P003_TypeCasting {
 		
 		int q = 12;
 		double d = q;
+		String q1 = String.valueOf(q);
 		System.out.println(d);
+		
+		String n1 = "12";
+		int n2  = Integer.parseInt(n1);
+		String n3 = "23.23";
+		double n4 = Double.parseDouble(n3);
 	}
 }
