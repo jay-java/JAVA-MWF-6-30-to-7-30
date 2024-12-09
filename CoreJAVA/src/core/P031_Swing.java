@@ -2,6 +2,10 @@ package core;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -72,6 +76,18 @@ class SwingDemo implements ActionListener {
 		b3.addActionListener(this);
 		b4.addActionListener(this);
 	}
+	
+	
+	public static Connection createConnection() {
+		Connection conn = null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/swing", "root", "");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -85,12 +101,59 @@ class SwingDemo implements ActionListener {
 			System.out.println("name : "+name);
 			System.out.println("contact: "+contact);
 			System.out.println("address : "+address);
-			
-		} else if (e.getSource() == b2) {
+			try {
+				Connection conn = SwingDemo.createConnection();
+				String url ="insert into aaa(id,name,contact,address) values(?,?,?,?)";
+				PreparedStatement pst = conn.prepareStatement(url);
+				pst.setInt(1, id);
+				pst.setString(2, name);
+				pst.setLong(3, contact);
+				pst.setString(4, address);
+				//DML->insert,update,delete => executeUpdate
+				//DQL->select =>executeQuery
+				pst.executeUpdate();
+				System.out.println("data inserted");
+				t1.setText("");
+				t2.setText("");
+				t3.setText("");
+				t4.setText("");
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		} 
+		
+		else if (e.getSource() == b2) {
 			System.out.println("search button clicked");
-		} else if (e.getSource() == b3) {
+			int id = Integer.parseInt(t1.getText());
+			try {
+				Connection conn = SwingDemo.createConnection();
+				String url ="select * from aaa where id=?";
+				PreparedStatement pst = conn.prepareStatement(url);
+				pst.setInt(1, id);
+				ResultSet rs = pst.executeQuery();
+				if(rs.next()) {
+					t1.setText(String.valueOf(rs.getInt("id")));
+					t2.setText(rs.getString("name"));
+					t3.setText(String.valueOf(rs.getLong("contact")));
+					t4.setText(rs.getString("address"));
+				}
+				else {
+					System.out.println("data not found");
+					t1.setText("");
+					t2.setText("");
+					t3.setText("");
+					t4.setText("");
+				}
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		} 
+		
+		else if (e.getSource() == b3) {
 			System.out.println("update button clicked");
-		} else if (e.getSource() == b4) {
+		} 
+		
+		else if (e.getSource() == b4) {
 			System.out.println("delete button clicked");
 		}
 
