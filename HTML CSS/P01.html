@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mypage</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
 </head>
 <body>
-  <h1>hello java developer</h1>
-  <h2>hello java developer</h2>
-  <h3>hello java developer</h3>
+  <h1 style="background-color:powderblue;">hello java developer</h1>
+  <h2 style="background-color:tomato;">hello java developer</h2>
+  <h3 style="color:blue; text-align:center;">hello java developer</h3>
   <h4>hello java developer</h4>
   <h5>hello java developer</h5>
   <h6>hello java developer</h6>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad odio dolore deserunt perspiciatis incidunt. A aspernatur ipsum totam esse quam laboriosam nesciunt dolores vero labore. Optio at laborum nesciunt inventore.</p>
+  <h1 style="font-family:verdana;">This is a heading</h1>
+  <h1 style="text-align:center;">Centered Heading</h1>
+  <p>Lorem <i>ipsum</i>, dolor sit <a href="https://www.w3schools.com/css/default.asp">to know more click here</a> consectetur <strong>adipisicing elit. Ad odio </strong>dolore deserunt perspiciatis incidunt. A aspernatur ipsum totam esse quam laboriosam nesciunt dolores vero labore. Optio at laborum nesciunt inventore.</p>
+  <table style="width:100%">
+    <thead>
+        <tr>
+            <td style="height:100px">Company</td>
+            <td style="width:60%">Contact</td>
+            <td>Country</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </tbody>
+  </table>
+  <br>
+
   <table>
     <thead>
         <tr>
@@ -48,43 +89,40 @@
   <table>
     <form>
         <tr>
-            <td><input type="text" placeholder="Enter name" required=""></td>
-            <td><input type="text" placeholder="Enter surname"></td>
+            <td><input type="text" placeholder="Enter name" required></td>
         </tr>
-        <tr>
-            <input type="date">
-        </tr>
-        <tr>
-            <input type="email">
-        </tr>
-        <tr>
-            <input type="file">
-        </tr>
-        <tr>
-            <input type="password" placeholder="enter password">
-        </tr>
-        <tr>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female
-        </tr>
-        <tr>
-            <input type="checkbox" name="hobby">Reading
-            <input type="checkbox" name="hobby">Chess
-        </tr>
-        <tr>
-            <select value="">
-                <option value="">A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-                <option>E</option>
-            </select>
-        </tr>
-        <tr>
-            <td><input type="button" value="register"></td>
-        </tr>
+        <tr><td bgcolor="red"><input type="text" placeholder="Enter surname"></td></tr>
+        <tr> <td bgcolor="pink"><input type="date"></td></tr>
+        <tr> <td><input type="email"></td></tr>
+        <tr>  <td><input type="file"></td></tr>
+        <tr> <td><input type="password" placeholder="enter password"></td></tr>
+        <tr> <td><input type="radio" name="gender">Male</td></tr>
+        <tr> <td><input type="radio" name="gender">Female</td></tr>
+        <tr>   <td><input type="checkbox" name="hobby">Reading</td></tr>
+        <tr> <td><input type="checkbox" name="hobby">Chess</td></tr>
+        <tr> <td><select value="">
+            <option value="">A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+        </select></td></tr>
+        <tr><td><input type="button" value="register"></td></tr>
     </form>
   </table>
-  <img src="images/channels4_profile.jpg">
+  <h1><a href="https://www.google.com/">Go to Google</a></h1>
+  <img src="images/channelspg" height="100" alt="Italian Trulli">
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>    
+   
 </body>
 </html>
