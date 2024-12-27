@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1><a>Register here</a></h1>
-<h1><a>Login here</a></h1>
+login page
 </body>
 </html>
