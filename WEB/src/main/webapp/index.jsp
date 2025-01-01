@@ -34,5 +34,6 @@
 			</tr>
 		</table>
 	</form>
+	<h1><a href="login.jsp">If already have an Account? Login</a></h1>
 </body>
 </html>
