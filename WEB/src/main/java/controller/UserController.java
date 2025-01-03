@@ -20,18 +20,10 @@ public class UserController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
-		if(action.equalsIgnoreCase("register")) {
-			User u = new User();
-			u.setName(request.getParameter("name"));
-			u.setContact(Long.parseLong(request.getParameter("contact")));
-			u.setAddress(request.getParameter("address"));
-			u.setEmail(request.getParameter("email"));
-			u.setPassword(request.getParameter("password"));
-			System.out.println(u);
-			
-		}
-		else if(action.equalsIgnoreCase("login")) {
-			
+		if(action.equalsIgnoreCase("delete")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			UserDao.deleteUser(id);
+			response.sendRedirect("home.jsp");
 		}
 	}
 
@@ -69,6 +61,23 @@ public class UserController extends HttpServlet {
 				request.setAttribute("msg", "OOPS! Account not exist.");
 				request.getRequestDispatcher("login.jsp").forward(request, response);
 			}
+		}
+		else if(action.equalsIgnoreCase("edit")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			User u = UserDao.getUserById(id);
+			request.setAttribute("data", u);
+			request.getRequestDispatcher("update.jsp").forward(request, response);
+		}
+		else if(action.equalsIgnoreCase("update")) {
+			User u = new User();
+			u.setId(Integer.parseInt(request.getParameter("id")));
+			u.setName(request.getParameter("name"));
+			u.setContact(Long.parseLong(request.getParameter("contact")));
+			u.setAddress(request.getParameter("address"));
+			u.setEmail(request.getParameter("email"));
+			u.setPassword(request.getParameter("password"));
+			UserDao.updateUserData(u);
+			response.sendRedirect("home.jsp");
 		}
 	}
 
