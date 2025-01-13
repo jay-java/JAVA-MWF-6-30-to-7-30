@@ -61,7 +61,7 @@
 					
 						<div>
 							<button class="btn btn-primary py-2 px-4" type="submit"
-								name="action" value="login" id="sendMessageButton">Change Password</button>
+								name="action" value="cp" id="sendMessageButton">Change Password</button>
 						</div>
 					</form>
 					<br>

@@ -91,6 +91,28 @@ public class SellerController extends HttpServlet {
 			session.setAttribute("data", u);
 			request.getRequestDispatcher("s-home.jsp").forward(request, response);
 		}
+		else if(action.equalsIgnoreCase("cp")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			String op = request.getParameter("op");
+			String np = request.getParameter("np");
+			String cnp = request.getParameter("cnp");
+			boolean flag  = SellerDao.checkOldPassword(id, op);
+			if(flag == true) {
+				if(np.equals(cnp)) {
+					SellerDao.setNewPassword(id, np);
+					request.setAttribute("msg", "Password updated Successfully");
+					request.getRequestDispatcher("s-change-password.jsp").forward(request, response);
+				}
+				else {
+					request.setAttribute("msg", "New password and confirm new password not matched");
+					request.getRequestDispatcher("s-change-password.jsp").forward(request, response);
+				}
+			}
+			else {
+				request.setAttribute("msg", "Old password is incorrect");
+				request.getRequestDispatcher("s-change-password.jsp").forward(request, response);
+			}
+		}
 	}
 
 }
