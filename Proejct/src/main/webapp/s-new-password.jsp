@@ -13,7 +13,7 @@
 	<div class="container-fluid">
 		<h2
 			class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-			<span class="bg-secondary pr-3">Seller Forgot Password</span>
+			<span class="bg-secondary pr-3">Seller New Password</span>
 		</h2>
 		<%
 		String msg = (String) request.getAttribute("msg");
@@ -36,17 +36,24 @@
 			<div class="col-lg-7 mb-5">
 				<div class="contact-form bg-light p-30">
 					<div id="success"></div>
+					<%String email = (String)request.getAttribute("email"); %>
 					<form action="SellerController" method="post">
-						
+						<input type="hidden" name="email" value="<%=email%>">
 						<div class="control-group">
-							<input type="email" class="form-control" id="email" name="email"
-								placeholder="Your Email" required="required"
+							<input type="password" class="form-control" id="email" name="np"
+								placeholder="Enter Password" required="required"
+								data-validation-required-message="Please enter your email" />
+							<p class="help-block text-danger"></p>
+						</div>
+							<div class="control-group">
+							<input type="password" class="form-control" id="email" name="cnp"
+								placeholder="Confirm Password" required="required"
 								data-validation-required-message="Please enter your email" />
 							<p class="help-block text-danger"></p>
 						</div>
 						<div>
 							<button class="btn btn-primary py-2 px-4" type="submit"
-								name="action" value="getotp" id="sendMessageButton">Get OTP</button>
+								name="action" value="np" id="sendMessageButton">New Password</button>
 						</div>
 					</form>
 					<br>

@@ -71,8 +71,8 @@
 									data-toggle="dropdown">Product <i
 									class="fa fa-angle-down mt-1"></i></a>
 								<div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-									<a href="s-register.jsp" class="dropdown-item">Upload Product</a> <a
-										href="c-register.jsp" class="dropdown-item">Manage Product</a>
+									<a href="s-upload-product.jsp" class="dropdown-item">Upload Product</a>
+									<a href="s-manage-product.jsp" class="dropdown-item">Manage Product</a>
 								</div>
 							</div>
 							<div class="nav-item dropdown">

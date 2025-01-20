@@ -111,4 +111,17 @@ public class SellerDao {
 			e.printStackTrace();
 		}
 	}
+	public static void setForgotNewPassword(String email,String np) {
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql = "update seller set password=? where email=?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setString(1, np);
+			pst.setString(2, email);
+			pst.executeUpdate();
+			System.out.println("pass changed");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
