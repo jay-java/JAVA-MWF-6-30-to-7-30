@@ -36,7 +36,7 @@
 			<div class="col-lg-7 mb-5">
 				<div class="contact-form bg-light p-30">
 					<div id="success"></div>
-					<form action="Productcontroller" method="post">
+					<form action="Productcontroller" method="post" enctype="multipart/form-data">
 						<input type="hidden" name="sid" value="<%=s.getId()%>">
 						<div class="control-group">
 							<input type="file" class="form-control" id="name"
