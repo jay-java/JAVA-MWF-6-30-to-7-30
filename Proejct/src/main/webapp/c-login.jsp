@@ -14,30 +14,29 @@
 	<div class="container-fluid">
 		<h2
 			class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-			<span class="bg-secondary pr-3">Customer Login</span>
+			<span class="bg-secondary pr-3">Customer Register</span>
 		</h2>
 		<div class="row px-xl-5">
 			<div class="col-lg-7 mb-5">
 				<div class="contact-form bg-light p-30">
 					<div id="success"></div>
-					<form name="sentMessage" id="contactForm" novalidate="novalidate">
-						
+					<form action="CustomerController" method="post">
 						<div class="control-group">
 							<input type="email" class="form-control" id="email"
-								placeholder="Your Email" required="required"
+								placeholder="Your Email" name="email" required="required"
 								data-validation-required-message="Please enter your email" />
 							<p class="help-block text-danger"></p>
 						</div>
 						<div class="control-group">
 							<input type="text" class="form-control" id="subject"
-								placeholder="Password" required="required"
+								placeholder="Password" name="password" required="required"
 								data-validation-required-message="Please enter a subject" />
 							<p class="help-block text-danger"></p>
 						</div>
 					
 						<div>
-							<button class="btn btn-primary py-2 px-4" type="submit"
-								id="sendMessageButton">Login</button>
+							<button class="btn btn-primary py-2 px-4" type="submit" name="action" value="login"
+								id="sendMessageButton">Register</button>
 						</div>
 					</form>
 				</div>

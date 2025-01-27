@@ -41,8 +41,8 @@
 							<td class="align-middle"><%=p.getPqty() %> items</td>
 							<td class="align-middle"><%=p.getPcategory() %></td>
 							<td class="align-middle"><%=p.getPdesc() %></td>
-							<td class="align-middle"><a href="#" class="btn btn-success">Edit</a></td>
-							<td class="align-middle"><a href="#" class="btn btn-danger">Delete</a></td>
+							<td class="align-middle"><a href="s-single-product.jsp?id=<%=p.getPid() %>" class="btn btn-success">Edit</a></td>
+							<td class="align-middle"><a href="s-delete-product.jsp?id=<%=p.getPid() %>" class="btn btn-danger">Delete</a></td>
 						</tr>
 						<%} %>
 					</tbody>
