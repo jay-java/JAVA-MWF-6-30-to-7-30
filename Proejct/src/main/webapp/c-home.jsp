@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="text-center py-4">
-                        <a class="h6 text-decoration-none text-truncate" href=""><%=p.getPname() %></a>
+                        <a class="h6 text-decoration-none text-truncate" href="c-single-product.jsp?pid=<%=p.getPid()%>"><%=p.getPname() %></a>
                         <div class="d-flex align-items-center justify-content-center mt-2">
                             <h5>Rs. <%=p.getPprice() %></h5><h6 class="text-muted ml-2"></h6>
                         </div>
