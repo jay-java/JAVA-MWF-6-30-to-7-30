@@ -1,3 +1,5 @@
+<%@page import="dao.CartDao"%>
+<%@page import="model.Cart"%>
 <%@page import="dao.WIshListDao"%>
 <%@page import="model.WishList"%>
 <%@page import="java.util.List"%>
@@ -99,10 +101,11 @@
 								class="fas fa-heart text-primary"></i> <span
 								class="badge text-secondary border border-secondary rounded-circle"
 								style="padding-bottom: 2px;"><%out.print(list1.size()); %></span>
-							</a> <a href="" class="btn px-0 ml-3"> <i
+							<%List<Cart> list2 = CartDao.getCartByCusId(s.getId()); %>
+							</a> <a href="c-cart.jsp" class="btn px-0 ml-3"> <i
 								class="fas fa-shopping-cart text-primary"></i> <span
 								class="badge text-secondary border border-secondary rounded-circle"
-								style="padding-bottom: 2px;">0</span>
+								style="padding-bottom: 2px;"><%out.print(list2.size()); %></span>
 							</a>
 						</div>
 					</div>

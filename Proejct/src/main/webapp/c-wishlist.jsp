@@ -13,7 +13,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%String msg =(String)request.getAttribute("msg"); %>
+<%if(msg!=null){ %>
+<div class="text-center">
+	<h3><%out.print(msg); %></h3>
+</div>
+<%} %>
 	<!-- Cart Start -->
 	<div class="container-fluid">
 		<div class="row px-xl-5">

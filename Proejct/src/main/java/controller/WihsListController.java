@@ -46,8 +46,17 @@ public class WihsListController extends HttpServlet {
 			WishList w = new WishList();
 			w.setCus_id(Integer.parseInt(request.getParameter("cus_id")));
 			w.setPid(Integer.parseInt(request.getParameter("pid")));
-			WIshListDao.addToWishList(w);
-			response.sendRedirect("c-home.jsp");
+			boolean flag = WIshListDao.checkProductForWishList(Integer.parseInt(request.getParameter("cus_id")),
+					Integer.parseInt(request.getParameter("pid")));
+			
+			if(flag == false) {
+				WIshListDao.addToWishList(w);
+				response.sendRedirect("c-home.jsp");
+			}
+			else {
+				request.setAttribute("msg", "Product already added !");
+				request.getRequestDispatcher("c-wishlist.jsp").forward(request, response);
+			}
 		}
 	}
 

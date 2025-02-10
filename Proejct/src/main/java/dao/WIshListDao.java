@@ -55,4 +55,21 @@ public class WIshListDao {
 			e.printStackTrace();
 		}
 	}
+	public static boolean checkProductForWishList(int cus_id,int pid) {
+		boolean flag = false;
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql = "select * from wishlist where cus_id=? and pid=?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setInt(1,cus_id);
+			pst.setInt(2, pid);
+			ResultSet rs = pst.executeQuery();
+			if(rs.next()) {
+				flag = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return flag;
+	}
 }

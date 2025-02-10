@@ -56,9 +56,13 @@
 						</form>
 					</div>
 					<div class="d-flex align-items-center mb-4 pt-2">
-						<button class="btn btn-primary px-3">
-							<i class="fa fa-shopping-cart mr-1"></i> Add To Cart
-						</button>
+						<form action="CartController" method="post">
+							<input type="hidden" name="cus_id" value="<%=s.getId()%>">
+							<input type="hidden" name="pid" value="<%=p.getPid()%>">
+							<button class="btn btn-primary px-3" name="action" value="addtocart">
+								<i class="fa fa-shopping-cart mr-1"></i> Add To Cart
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
