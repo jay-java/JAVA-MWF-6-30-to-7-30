@@ -76,10 +76,10 @@
 									data-toggle="dropdown">Product <i
 									class="fa fa-angle-down mt-1"></i></a>
 								<div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-									<a href="s-upload-product.jsp" class="dropdown-item">Electronics</a>
-									<a href="s-manage-product.jsp" class="dropdown-item">Furniture</a>
-									<a href="s-manage-product.jsp" class="dropdown-item">Clothes</a>
-									<a href="s-manage-product.jsp" class="dropdown-item">Footware</a>
+									<a href="c-product.jsp?category=Electronics" class="dropdown-item">Electronics</a>
+									<a href="c-product.jsp?category=Furniture" class="dropdown-item">Furniture</a>
+									<a href="c-product.jsp?category=Clothes" class="dropdown-item">Clothes</a>
+									<a href="c-product.jsp?category=Footware" class="dropdown-item">Footware</a>
 								</div>
 							</div>
 							<div class="nav-item dropdown">

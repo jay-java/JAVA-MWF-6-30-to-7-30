@@ -55,6 +55,34 @@ public class ProductDao {
 		}
 		return list;
 	}
+	
+	public static List<Product> getProductsByCategory(String category){
+		System.out.println(category);
+		List<Product> list = new ArrayList<Product>();
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql="select * from product where pcategory=?";
+			PreparedStatement pst= conn.prepareStatement(sql);
+			pst.setString(1, category);
+			ResultSet rs = pst.executeQuery();
+			while(rs.next()) {
+				Product p = new Product();
+				p.setPid(rs.getInt("pid"));
+				p.setSid(rs.getInt("sid"));
+				p.setPprice(rs.getInt("pprice"));
+				p.setPqty(rs.getInt("pqty"));
+				p.setImage(rs.getString("image"));
+				p.setPname(rs.getString("pname"));
+				p.setPcategory(rs.getString("pcategory"));
+				p.setPdesc(rs.getString("pdesc"));
+				list.add(p);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
 	public static void deleteProductByPid(int pid) {
 		try {
 			Connection conn = DBConnection.createConnection();
