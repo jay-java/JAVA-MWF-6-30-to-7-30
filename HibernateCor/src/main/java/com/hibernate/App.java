@@ -9,7 +9,7 @@ public class App {
 	public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        SessionFactory sf =new Configuration().configure("com/hibernate/hibernate.cfg.xml").buildSessionFactory();
+        SessionFactory sf =new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         Session session = sf.openSession();
         Transaction tx = session.beginTransaction();
         
