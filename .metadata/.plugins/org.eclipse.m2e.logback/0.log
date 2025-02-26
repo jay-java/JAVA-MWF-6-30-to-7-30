@@ -698,3 +698,10 @@
 2025-02-19 19:33:17,223 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\test\resources
 2025-02-19 19:33:19,874 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\main\resources
 2025-02-19 19:33:19,875 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\test\resources
+2025-02-19 19:34:23,068 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\main\resources
+2025-02-19 19:34:23,069 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\test\resources
+2025-02-19 19:35:14,555 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\main\resources
+2025-02-19 19:35:14,556 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\user\JAVA MWF 6-30 to 7-30\HibernateCor\src\test\resources
+2025-02-19 19:36:29,377 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@1f9a2849{STOPPING}[12.0.15,sto=0]
+2025-02-19 19:36:29,380 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@25da308d{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-02-26 18:42:24,105 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
