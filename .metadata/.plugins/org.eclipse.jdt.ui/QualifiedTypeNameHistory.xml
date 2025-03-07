@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="servicess.EmailService"/>
-    <fullyQualifiedTypeName name="dao.SellerDao"/>
-    <fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
-    <fullyQualifiedTypeName name="javax.mail.Part"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.Part"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="model.Customer"/>
-    <fullyQualifiedTypeName name="dao.CustomerDao"/>
-    <fullyQualifiedTypeName name="model.WishList"/>
     <fullyQualifiedTypeName name="dao.WIshListDao"/>
     <fullyQualifiedTypeName name="dao.ProductDao"/>
     <fullyQualifiedTypeName name="model.Product"/>
@@ -56,8 +46,18 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="collectionType.User"/>
+    <fullyQualifiedTypeName name="consINjection.user"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="consAmbiguity.User"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="collectionType.User"/>
+    <fullyQualifiedTypeName name="lifecycle.User"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 </qualifiedTypeNameHistroy>
