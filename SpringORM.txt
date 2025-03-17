@@ -1,0 +1,25 @@
+1.configuration
+	dependencies
+		spring depencies below 6.0 version
+		-spring core
+		-spring orm
+		-spring context
+		-mysql connector
+		-hibernate core
+2.connection(xml->IOC)
+	dao object
+	hibernateTemplate
+	sessionFactory(interface ->LocalSessionFactoryBean)
+		->dataSource
+		->hibernate Properties
+		->AnnotatedClass
+	dataSource
+		->driverClassName
+		->url
+		->username
+		->password
+	transactionManager
+	enable annotation-><tx:annotation-driven>
+3.model
+4.dao
+5.main class
