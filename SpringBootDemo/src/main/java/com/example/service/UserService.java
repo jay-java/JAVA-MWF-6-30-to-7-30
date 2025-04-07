@@ -15,7 +15,7 @@ public class UserService {
 	@Autowired
 	private UserRepository repo;
 
-	public void insertUser(User u) {
+	public void insertOrUpdateUser(User u) {
 		this.repo.save(u);
 	}
 	
@@ -27,7 +27,11 @@ public class UserService {
 		return this.repo.findById(id);
 	}
 	
-	public Optional<User> getUserByName(String name){
-		return Optional.of(this.repo.findUserByName(name));
+	public User getUserByName(String name){
+		return this.repo.findUserByName(name);
+	}
+	
+	public void deleteUserById(int id) {
+		this.repo.deleteById(id);
 	}
 }
