@@ -58,7 +58,6 @@ public class UserController {
 		return this.service.getUserById(id);
 	}
 	
-	
 	@GetMapping("/allusers/fetchbyname")
 	public User findUserByUsername(@RequestParam("name") String name){
 		System.out.println(name);
